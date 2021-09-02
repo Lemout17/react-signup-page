@@ -1,4 +1,41 @@
+// @import '~bootstrap/scss/bootstrap';
+@import './styles/base.scss';
+
 .App {
   text-align: center;
 }
 
+.form-signin {
+  margin: 50px auto;
+  padding: 35px;
+  width: 570px;
+  height: 964px;
+
+  box-shadow: 5px 10px 30px $form-box-shadow;
+  border-radius: 16px;
+  background-color: $white;
+}
+
+.form-control {
+  width: 100%;
+  padding: 24px;
+  margin-top: 12px;
+  margin-bottom: 30px;
+
+  font-size: $font-size-secondary;
+  font-weight: 400;
+  color: $primary-font-color;
+
+  border: 1px solid $input-normal;
+  border-radius: 16px;
+
+  background-color: transparent;
+
+  &::placeholder {
+    font-size: $font-size-secondary;
+  }
+
+  &:active {
+    border: 1px solid $input-confirmed;
+  }
+}
