@@ -1,9 +1,14 @@
 .iconButton {
   position: absolute;
-  top: 38%;
+  top: 30%;
   right: 3%;
 
   border: none;
 
   background-color: transparent;
+
+  @media screen and (min-width: 570px) {
+    top: 38%;
+    right: 3%;
+  }
 }

@@ -3,10 +3,10 @@
 .form {
   display: flex;
   flex-direction: column;
-  margin: 50px auto;
-  padding: 29px 35px;
-  width: 570px;
-  height: 964px;
+  margin: 10px auto;
+  padding: 25px 16px 18px 16px;
+  width: 340px;
+  height: 711px;
 
   box-shadow: 5px 10px 30px $form-box-shadow;
   border-radius: 16px;
@@ -22,19 +22,40 @@
 
 .mainIcon {
   margin: 0 auto;
+  & svg {
+    width: 50px;
+    height: 55px;
+  }
+  @media screen and (min-width: 570px) {
+    & svg {
+      width: 80px;
+      height: 82px;
+    }
+  }
 }
 
 .title {
-  margin-top: 24px;
-  margin-bottom: 35px;
+  margin-top: 21px;
+  margin-bottom: 24px;
   font-size: $font-size-primary;
+
+  @media screen and (min-width: 570px) {
+    margin-top: 24px;
+    margin-bottom: 35px;
+  }
 }
 
 .radioContainer {
+  position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 12px;
-  margin-bottom: 30px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 570px) {
+    margin-top: 12px;
+    margin-bottom: 30px;
+  }
 }
 
 .radioItem {
@@ -57,11 +78,16 @@
 
 label {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
-  font-size: $font-size-secondary;
+  font-size: $font-size-mobile;
   font-weight: 700;
   text-align: left;
+
+  @media screen and (min-width: 570px) {
+    margin-bottom: 30px;
+    font-size: $font-size-secondary;
+  }
 }
 
 .genderButton {
@@ -69,11 +95,12 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 156px;
-  height: 100px;
-  margin-right: 16px;
+  width: 90px;
+  height: 80px;
+  margin-left: 19px;
+  padding: 10px 0;
 
-  font-size: $font-size-secondary;
+  font-size: $font-size-mobile;
   font-weight: 400;
   color: $primary-font-color;
   fill: red;
@@ -83,8 +110,8 @@ label {
   background-color: transparent;
   transition: all 250ms $timing-function;
 
-  &:last-child {
-    margin-right: 0;
+  &:first-child {
+    margin-left: 0;
   }
 
   &:hover,
@@ -97,6 +124,15 @@ label {
 
   & svg {
     fill: currentColor;
+  }
+
+  @media screen and (min-width: 570px) {
+    width: 156px;
+    height: 100px;
+    margin-right: 16px;
+    padding: 20px 0;
+
+    font-size: $font-size-secondary;
   }
 }
 
@@ -114,11 +150,16 @@ label {
 }
 
 .gender-title {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 
-  font-size: $font-size-secondary;
+  font-size: $font-size-mobile;
   font-weight: 700;
   text-align: left;
+
+  @media screen and (min-width: 570px) {
+    margin-bottom: 12px;
+    font-size: $font-size-secondary;
+  }
 }
 
 .input-container {
@@ -127,21 +168,33 @@ label {
 
 .input {
   width: 100%;
-  padding: 24px;
-  margin-top: 12px;
-  // margin-bottom: 30px;
+  padding: 15px 18px;
+  margin-top: 8px;
 
-  font-size: $font-size-secondary;
+  font-size: $font-size-mobile;
   font-weight: 400;
   color: $primary-font-color;
 
   border: 1px solid $input-normal;
   border-radius: 16px;
+  background-color: transparent;
   outline: none;
 
   &::placeholder {
-    font-size: $font-size-secondary;
+    font-size: $font-size-mobile;
     color: $input-normal;
+  }
+
+  @media screen and (min-width: 570px) {
+    padding: 24px;
+    margin-top: 12px;
+
+    font-size: $font-size-secondary;
+
+    &::placeholder {
+      font-size: $font-size-secondary;
+      color: $input-normal;
+    }
   }
 }
 
@@ -150,15 +203,19 @@ label {
   bottom: -22%;
   left: 0;
 
-  font-size: 16px;
+  font-size: $font-size-mobile-secondary;
   font-weight: 400;
   color: $input-error;
+
+  @media screen and (min-width: 570px) {
+    font-size: $font-size-mobile;
+  }
 }
 
 .button {
-  padding: 25px 0;
+  padding: 15px 0;
 
-  font-size: $font-size-secondary;
+  font-size: $font-size-mobile;
   font-weight: 700;
   color: $white;
   background-color: $button-normal;
@@ -173,23 +230,40 @@ label {
   &:focus {
     background-color: $button-pressed;
   }
+
+  @media screen and (min-width: 570px) {
+    padding: 25px 0;
+
+    font-size: $font-size-secondary;
+  }
 }
 
 .link {
-  font-size: $font-size-secondary;
+  font-size: $font-size-mobile-secondary;
   font-weight: 700;
   color: $button-normal;
+
+  @media screen and (min-width: 570px) {
+    font-size: $font-size-secondary;
+  }
 }
 
 .infoText {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin: 16px 0;
 
-  font-size: $font-size-secondary;
+  font-size: $font-size-mobile-secondary;
   font-weight: 400;
+
   &:last-child {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 570px) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    font-size: $font-size-secondary;
   }
 }
 

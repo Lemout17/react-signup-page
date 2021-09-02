@@ -17,6 +17,7 @@ const SignUp = () => {
   const [isValidEmail, setIsValidEmail] = useState(true)
   const [emailMessage, setEmailMessage] = useState('')
   const [gender, setGender] = useState('')
+  const [genderMessage, setGenderMessage] = useState('')
   const [showPassword, setShowPassword] = useState(true)
   const [showPassword2, setShowPassword2] = useState(true)
   const [password, setPassword] = useState('')
@@ -41,21 +42,24 @@ const SignUp = () => {
   }
 
   const formIsValid = () => {
-    let isGood = true
+    if (gender === '') {
+      setGenderMessage('Please choose ur gender')
+      return
+    }
 
     if (!validator.isEmail(email)) {
       setIsValidEmail(false)
       setEmailMessage('Not a valid email address')
-      isGood = false
+      return
     }
 
     if (password !== password2) {
       setIsValidPassword(false)
       setPasswordMessage('Password fields do not match')
-      isGood = false
+      return
     }
 
-    return isGood
+    return true
   }
 
   const toggleShow = (name) => {
@@ -87,6 +91,7 @@ const SignUp = () => {
     setEmail('')
     setPassword('')
     setPassword2('')
+    setGenderMessage('')
     setPasswordMessage('')
     setEmailMessage('')
     setIsValidPassword(true)
@@ -113,7 +118,7 @@ const SignUp = () => {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <div className="mainIcon">
-        <Health width="80px" height="82px" />
+        <Health />
       </div>
       <h2 className="title">Sign Up with email</h2>
       <div>
@@ -153,6 +158,7 @@ const SignUp = () => {
             <Other width="28px" height="32px" />
             Other
           </button>
+          {genderMessage && <span className="help-block">{genderMessage}</span>}
         </div>
       </div>
 
