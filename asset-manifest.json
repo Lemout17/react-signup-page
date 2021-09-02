@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/react-signup-page/static/css/main.c579fb68.chunk.css",
+    "main.js": "/react-signup-page/static/js/main.15518b72.chunk.js",
+    "main.js.map": "/react-signup-page/static/js/main.15518b72.chunk.js.map",
+    "runtime-main.js": "/react-signup-page/static/js/runtime-main.4227aa88.js",
+    "runtime-main.js.map": "/react-signup-page/static/js/runtime-main.4227aa88.js.map",
+    "static/css/2.bc922b9c.chunk.css": "/react-signup-page/static/css/2.bc922b9c.chunk.css",
+    "static/js/2.bfd7eac2.chunk.js": "/react-signup-page/static/js/2.bfd7eac2.chunk.js",
+    "static/js/2.bfd7eac2.chunk.js.map": "/react-signup-page/static/js/2.bfd7eac2.chunk.js.map",
+    "index.html": "/react-signup-page/index.html",
+    "static/css/2.bc922b9c.chunk.css.map": "/react-signup-page/static/css/2.bc922b9c.chunk.css.map",
+    "static/css/main.c579fb68.chunk.css.map": "/react-signup-page/static/css/main.c579fb68.chunk.css.map",
+    "static/js/2.bfd7eac2.chunk.js.LICENSE.txt": "/react-signup-page/static/js/2.bfd7eac2.chunk.js.LICENSE.txt",
+    "static/media/base.scss": "/react-signup-page/static/media/Montserrat-Regular.3cd78665.ttf",
+    "static/media/eye.69a86a9f.svg": "/react-signup-page/static/media/eye.69a86a9f.svg",
+    "static/media/female.97accd86.svg": "/react-signup-page/static/media/female.97accd86.svg",
+    "static/media/icon.51e49696.svg": "/react-signup-page/static/media/icon.51e49696.svg",
+    "static/media/male.372d6329.svg": "/react-signup-page/static/media/male.372d6329.svg",
+    "static/media/transgender.d8809e7d.svg": "/react-signup-page/static/media/transgender.d8809e7d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4227aa88.js",
+    "static/css/2.bc922b9c.chunk.css",
+    "static/js/2.bfd7eac2.chunk.js",
+    "static/css/main.c579fb68.chunk.css",
+    "static/js/main.15518b72.chunk.js"
+  ]
+}
