@@ -2,12 +2,13 @@
   "name": "react-signup-page",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Lemout17.github.io/react-signup-page",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "bootstrap": "^5.1.0",
     "classnames": "^2.3.1",
+    "gh-pages": "^3.2.3",
     "modern-normalize": "^1.1.0",
     "node-sass": "4.14.1",
     "prop-types": "^15.7.2",
@@ -19,6 +20,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -120,6 +120,7 @@ label {
     color: $button-normal;
     font-weight: 700;
     fill: $button-normal;
+    cursor: pointer;
   }
 
   & svg {
@@ -222,6 +223,7 @@ label {
   border: none;
   border-radius: 16px;
   transition: all 250ms $timing-function;
+  cursor: pointer;
 
   &:hover {
     background-color: $button-hover;
